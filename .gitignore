@@ -1,0 +1,29 @@
+# Certbot 인증서 및 민감한 정보 (Let's Encrypt)
+certbot/conf/live/
+certbot/conf/archive/
+certbot/conf/accounts/
+certbot/conf/renewal/
+certbot/conf/ssl-dhparams.pem
+certbot/conf/options-ssl-nginx.conf
+init-letsencrypt.sh
+
+# Nginx 로그 및 캐시 파일
+nginx/logs/
+nginx/cache/
+nginx/tmp/
+
+# Docker 관련 파일 (볼륨 데이터, 컨테이너, 캐시)
+docker-compose.override.yaml
+docker-compose.override.yml
+.env
+.docker/
+.dockerignore
+**/.DS_Store
+**/node_modules
+**/__pycache__
+
+# 시스템 파일 및 에디터 관련 파일
+.vscode/
+.idea/
+*.swp
+*~
